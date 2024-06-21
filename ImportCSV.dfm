@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Data Import'
+  Caption = '0'
   ClientHeight = 418
   ClientWidth = 639
   Color = clBtnFace
@@ -75,21 +75,6 @@ object Form1: TForm1
     Width = 639
     Height = 19
     Panels = <>
-    ExplicitTop = 395
-    ExplicitWidth = 637
-  end
-  object UniConnection1: TUniConnection
-    Left = 136
-    Top = 344
-  end
-  object UniQuery1: TUniQuery
-    Connection = UniConnection1
-    Left = 104
-    Top = 344
-  end
-  object OracleUniProvider1: TOracleUniProvider
-    Left = 72
-    Top = 344
   end
   object ImageList1: TImageList
     ColorDepth = cd32Bit

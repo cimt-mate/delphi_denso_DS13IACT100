@@ -78,7 +78,7 @@ begin
   // Set Folder Path and Enable Read CSV button for Form1
   Form1.EditFolderPath.Text := EditFolderPath.Text;
   Form1.SpeedButtonCSVRead.Enabled := True;
-  IniFile := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'GRD\DS13IACT100.ini');
+  IniFile := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'GRD\' + ChangeFileExt(ExtractFileName(Application.ExeName),'') + '.ini');
   try
     // Import Folder Path
     IniFile.WriteString('Settings', 'FolderPath', EditFolderPath.Text);
@@ -170,7 +170,7 @@ var
   IniFile: TIniFile;
   Operation: string;
 begin
-  IniFile := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'GRD\DS13IACT100.ini');
+  IniFile := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'GRD\' + ChangeFileExt(ExtractFileName(Application.ExeName),'') + '.ini');
   try
     // Import Folder Path
     EditFolderPath.Text := IniFile.ReadString('Settings', 'FolderPath', '');

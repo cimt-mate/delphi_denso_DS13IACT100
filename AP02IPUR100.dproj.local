@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/11/07 13:52:41.000.840,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/08 09:45:40.000.377,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/10 08:46:18.000.910,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/10 09:00:14.000.545,C:\dev\DELPHI\KT01IAT100\ImportCSV.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/10 09:00:14.000.545,C:\dev\DELPHI\KT01IAT100\ImportCSV.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/11/10 09:00:23.000.452,C:\dev\DELPHI\KT01IAT100\KT01AT100.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/11/13 11:33:22.000.809,=C:\dev\DELPHI\KT01IAT100_Test\Unit2.pas</Transaction>
+    <Transaction>2023/11/13 11:33:46.000.402,C:\dev\DELPHI\KT01IAT100_Test\ImportSetting.pas=C:\dev\DELPHI\KT01IAT100_Test\Unit2.pas</Transaction>
+    <Transaction>2023/11/13 11:33:46.000.402,C:\dev\DELPHI\KT01IAT100_Test\ImportSetting.dfm=C:\dev\DELPHI\KT01IAT100_Test\Unit2.dfm</Transaction>
+    <Transaction>2023/11/13 11:35:08.000.845,=C:\dev\DELPHI\KT01IAT100_Test\Unit1.pas</Transaction>
+    <Transaction>2023/11/13 11:35:33.000.042,C:\dev\DELPHI\KT01IAT100_Test\Settin.pas=C:\dev\DELPHI\KT01IAT100_Test\Unit1.pas</Transaction>
+    <Transaction>2023/11/13 11:35:50.000.297,C:\dev\DELPHI\KT01IAT100_Test\SettingsFormUnit.pas=C:\dev\DELPHI\KT01IAT100_Test\Settin.pas</Transaction>
+    <Transaction>2023/11/13 11:36:38.000.056,=C:\dev\DELPHI\KT01IAT100_Test\Unit2.pas</Transaction>
+    <Transaction>2023/11/13 12:51:00.000.101,C:\dev\DELPHI\KT01IAT100_Test\SettingsFormUnit.pas=</Transaction>
+    <Transaction>2023/11/13 12:58:36.000.792,=C:\dev\DELPHI\KT01IAT100_Test\Unit2.pas</Transaction>
+    <Transaction>2023/11/13 12:58:47.000.597,C:\dev\DELPHI\KT01IAT100_Test\ImportSetting.pas=C:\dev\DELPHI\KT01IAT100_Test\Unit2.pas</Transaction>
+    <Transaction>2023/11/13 12:58:47.000.597,C:\dev\DELPHI\KT01IAT100_Test\ImportSetting.dfm=C:\dev\DELPHI\KT01IAT100_Test\Unit2.dfm</Transaction>
+    <Transaction>2023/11/20 09:45:38.000.618,C:\dev\DELPHI\DENSO\DS13IACT100\KT01AT100.dproj=C:\dev\DELPHI\DENSO\DS13IACT100\DS13IACT100.dproj</Transaction>
+    <Transaction>2024/02/05 09:09:32.000.734,C:\dev\DELPHI\APV\DS13IACT100\DS13IACT100.dproj=C:\dev\DELPHI\APV\DS13IACT100\AP01IPC100.dproj</Transaction>
+    <Transaction>2024/02/05 09:11:50.000.202,C:\dev\DELPHI\APV\AP01IPUR100\AP01IPUR100.dproj=C:\dev\DELPHI\APV\AP01IPUR100\AP01IPC100.dproj</Transaction>
+    <Transaction>2024/02/05 09:38:46.000.516,C:\dev\DELPHI\APV\AP01IPUR100\AP01IPUR100.dproj=C:\dev\DELPHI\APV\AP01IPUR100\BaseImport.dproj</Transaction>
+    <Transaction>2024/02/06 11:24:39.000.576,C:\dev\DELPHI\APV\AP02IPUR100\AP02IPUR100.dproj=C:\dev\DELPHI\APV\AP02IPUR100\BaseImport.dproj</Transaction>
+    <Transaction>2024/03/27 15:48:32.000.942,=C:\dev\DELPHI\APV\AP02IPUR100\Unit1.pas</Transaction>
+    <Transaction>2024/03/27 15:52:59.000.153,C:\dev\DELPHI\APV\AP02IPUR100\Unit1.pas=C:\dev\DELPHI\APV\AP02IPUR100\DatabaseServiceUnit.pas</Transaction>
+  </Transactions>
+</BorlandProject>

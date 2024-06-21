@@ -1,0 +1,92 @@
+unit DatabaseServiceUnit;
+
+interface
+
+uses
+  IdHTTP, IdSSLOpenSSL, System.JSON, System.SysUtils, System.Classes, System.NetEncoding;
+
+type
+  TDatabaseService = class
+  private
+    FApiUrl: string;
+  public
+    function LoginToApi: string;
+    function FetchSQLDataFromAPI: TJSONArray;
+  end;
+
+implementation
+
+function TDatabaseService.LoginToApi: string;
+var
+  IdHTTP: TIdHTTP;
+  Response: TStringStream;
+  RequestBody: TStringStream;
+  JsonResponse: TJSONObject;
+  SessionID: string;
+begin
+  Result := '';
+  IdHTTP := TIdHTTP.Create(nil);
+  Response := TStringStream.Create;
+  RequestBody := TStringStream.Create('{"loginID": "admin", "passWord": "admin"}');
+  try
+    IdHTTP.Request.ContentType := 'application/json';
+    IdHTTP.Request.Accept := 'application/json';
+    IdHTTP.Post(FApiUrl, RequestBody, Response);
+    if IdHTTP.ResponseCode = 200 then
+    begin
+      JsonResponse := TJSONObject.ParseJSONValue(Response.DataString) as TJSONObject;
+      try
+        if JsonResponse.TryGetValue<string>('sessionID', SessionID) then
+          Result := SessionID;
+      finally
+        JsonResponse.Free;
+      end;
+    end;
+  finally
+    IdHTTP.Free;
+    Response.Free;
+    RequestBody.Free;
+  end;
+end;
+
+function TDatabaseService.FetchSQLDataFromAPI: TJSONArray;
+var
+  IdHTTP: TIdHTTP;
+  Response: TStringStream;
+  RequestJSON, JsonResponse: TJSONObject;
+  SessionID, JsonStr: string;
+begin
+  Result := nil;
+  SessionID := LoginToApi;
+  if SessionID <> '' then
+  begin
+    IdHTTP := TIdHTTP.Create(nil);
+    Response := TStringStream.Create;
+    try
+      // Construct your JSON request here as per your application's requirements
+      JsonStr := ''; // Populate this with the JSON string of your request
+      RequestJSON := TJSONObject.ParseJSONValue(JsonStr) as TJSONObject;
+      try
+        IdHTTP.Request.ContentType := 'application/json';
+        IdHTTP.Request.Accept := 'application/json';
+        IdHTTP.Request.CustomHeaders.Values['SESSIONID'] := SessionID;
+        IdHTTP.Post(FApiUrl, RequestJSON, Response);
+
+        if IdHTTP.ResponseCode = 200 then
+        begin
+          JsonResponse := TJSONObject.ParseJSONValue(Response.DataString) as TJSONObject;
+          try
+            // Process JsonResponse as needed
+          finally
+            JsonResponse.Free;
+          end;
+        end;
+      finally
+        RequestJSON.Free;
+      end;
+    finally
+      IdHTTP.Free;
+      Response.Free;
+    end;
+  end;
+end;
